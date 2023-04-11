@@ -6,7 +6,8 @@ function App() {
   return (
     <>
 
-    <h1>Upcoming film Releases for UK</h1>
+    <h1><u>Upcoming film Releases for UK</u></h1>
+  
     <MovieBox/>
 
     </>

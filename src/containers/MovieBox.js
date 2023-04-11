@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Movie from '../components/Movie';
 import MovieList from '../components/MovieList';
 import MovieForm from '../components/MovieForm';
 
@@ -46,7 +45,7 @@ const MovieBox = () => {
         <hr></hr>
 
 
-        <a href=' https://www.imdb.com/calendar/?region=gb'><p>View Upcoming Movies {">>"} </p></a>
+        <div className='MovieListInput'><a href=' https://www.imdb.com/calendar/?region=gb'><p>View Upcoming Movies {">>"} </p></a></div>
 
         <MovieForm onMovieSubmit={addMovie}/>
 

@@ -3,7 +3,7 @@ import Movie from "./Movie";
 const MovieList = ({ movies }) => {
     return (
         <>
-            <h3>Movie List</h3>
+        <div className="MovieList">
         <ul>
             {movies.map((movie) =>
                 <Movie
@@ -13,6 +13,7 @@ const MovieList = ({ movies }) => {
                 />
             )}
         </ul>
+        </div>
         </>
     );
 }

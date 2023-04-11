@@ -24,7 +24,8 @@ const MovieForm = ({onMovieSubmit}) => {
     }
     
 
-return ( 
+return (
+    <div className='MovieListInput'>
     <form onSubmit = {handleSubmit}>
      <input 
      type ="name"
@@ -41,6 +42,7 @@ return (
      />
      <button>Add Movie</button>
     </form>
+    </div> 
   );
 
 }
