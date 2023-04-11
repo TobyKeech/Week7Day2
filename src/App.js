@@ -1,14 +1,13 @@
 import './App.css';
-import React, { useState } from 'react';
+import MovieBox from './containers/MovieBox';
 
 
 function App() {
   return (
     <>
 
-    <h1>Movies List</h1>
-
-
+    <h1>Upcoming film Releases for UK</h1>
+    <MovieBox/>
 
     </>
   )

@@ -35,9 +35,13 @@ const MovieBox = () => {
     return (
 
         <>
-
-        <h2>Movie Box</h2>
         <MovieList movies={movies} />
+
+        <hr></hr>
+
+
+        <a href=' https://www.imdb.com/calendar/?region=gb'><p>View Upcoming Movies {">>"} </p></a>
+
 
         </>
 

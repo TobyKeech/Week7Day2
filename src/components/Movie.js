@@ -1,9 +1,11 @@
-const Movie = ({ id, name, url }) => {
+const Movie = ({ name, url }) => {
     return (
         <>
-            <p>{id}</p>
+        <li>
+        <a href={url}>
             <p>{name}</p>
-            <p>{url}</p>
+        </a>
+        </li>
         </>
     );
 }
