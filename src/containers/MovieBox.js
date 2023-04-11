@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Movie from '../components/Movie';
 import MovieList from '../components/MovieList';
+import MovieForm from '../components/MovieForm';
 
 const MovieBox = () => {
     const [movies, setMovies] = useState(
@@ -32,6 +33,11 @@ const MovieBox = () => {
         ]
     )
 
+    const addMovie = (movie) => {
+        movie.id = Date.now()
+        setMovies([...movies, movie])
+    }
+
     return (
 
         <>
@@ -42,6 +48,7 @@ const MovieBox = () => {
 
         <a href=' https://www.imdb.com/calendar/?region=gb'><p>View Upcoming Movies {">>"} </p></a>
 
+        <MovieForm onMovieSubmit={addMovie}/>
 
         </>
 
@@ -49,5 +56,5 @@ const MovieBox = () => {
 }
 
 
-export default MovieBox
+export default MovieBox;
 
